@@ -7,7 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWS.CodePipeline.And.AWS.El
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{630675F9-E9D4-4F06-BBF4-AB3822FAF889}"
 	ProjectSection(SolutionItems) = preProject
-		AWS.CodePipeline.And.AWS.Elastic.Beanstalk.Example\.runtimeconfig.json = AWS.CodePipeline.And.AWS.Elastic.Beanstalk.Example\.runtimeconfig.json
 		buildspec.yml = buildspec.yml
 	EndProjectSection
 EndProject
