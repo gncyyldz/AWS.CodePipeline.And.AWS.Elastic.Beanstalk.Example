@@ -1,0 +1,1 @@
+web: dotnet ./app/AWS.CodePipeline.And.AWS.Elastic.Beanstalk.Example.dll
