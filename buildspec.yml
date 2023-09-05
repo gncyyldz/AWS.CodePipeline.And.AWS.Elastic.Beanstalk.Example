@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      dotnet: 6.0
+  pre_build:
+    commands:
+      - dotnet restore AWS.CodePipeline.And.AWS.Elastic.Beanstalk.Example/AWS.CodePipeline.And.AWS.Elastic.Beanstalk.Example.csproj
+  build:
+    commands:
+      - dotnet build AWS.CodePipeline.And.AWS.Elastic.Beanstalk.Example/AWS.CodePipeline.And.AWS.Elastic.Beanstalk.Example.csproj
+  post_build:
+    commands:
+      - dotnet publish -c Release -o ./app/ AWS.CodePipeline.And.AWS.Elastic.Beanstalk.Example/AWS.CodePipeline.And.AWS.Elastic.Beanstalk.Example.csproj
+      
+artifacts:
+  files: '**/*'
